@@ -23,5 +23,6 @@ TEST(TEST_HELPER, TestCanSplitHello) {
         }
         return true;
       },
-      grps, expected) << "unmatched results";
+      grps, expected)
+      << "unmatched results";
 }
