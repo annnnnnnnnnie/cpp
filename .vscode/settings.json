@@ -67,7 +67,9 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "semaphore": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "bitset": "cpp",
+        "complex": "cpp"
     },
     "cmake.sourceDirectory": "${workspaceFolder}/792-number-of-matching-subsequences",
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
