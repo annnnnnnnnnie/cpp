@@ -1,3 +1,5 @@
+#include "trie.h"
+
 #include <algorithm>
 #include <string>
 
