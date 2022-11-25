@@ -66,6 +66,9 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "semaphore": "cpp"
-    }
+        "semaphore": "cpp",
+        "typeindex": "cpp"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/792-number-of-matching-subsequences",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }
