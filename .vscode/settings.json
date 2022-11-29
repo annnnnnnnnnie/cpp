@@ -71,6 +71,6 @@
         "bitset": "cpp",
         "complex": "cpp"
     },
-    "cmake.sourceDirectory": "${workspaceFolder}/792-number-of-matching-subsequences",
+    "cmake.sourceDirectory": "${workspaceFolder}",
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

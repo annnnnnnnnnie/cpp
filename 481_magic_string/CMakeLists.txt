@@ -15,13 +15,13 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(
-  solution_test
+  solution_test_${PROJECT_NAME}
   solution_test.cpp
 )
 target_link_libraries(
-  solution_test
+  solution_test_${PROJECT_NAME}
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(solution_test)
+gtest_discover_tests(solution_test_${PROJECT_NAME})

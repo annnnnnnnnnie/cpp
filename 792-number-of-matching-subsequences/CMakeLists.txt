@@ -13,17 +13,17 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(solution_test)
+add_executable(solution_test_${PROJECT_NAME})
 
-target_sources(solution_test PUBLIC solution_test.cpp)
+target_sources(solution_test_${PROJECT_NAME} PUBLIC solution_test.cpp)
 
-target_link_libraries(solution_test GTest::gtest_main)
-target_compile_options(solution_test PUBLIC -Wall -pedantic -O2)
+target_link_libraries(solution_test_${PROJECT_NAME} GTest::gtest_main)
+target_compile_options(solution_test_${PROJECT_NAME} PUBLIC -Wall -pedantic -O2)
 
 include(GoogleTest)
-gtest_discover_tests(solution_test)
+gtest_discover_tests(solution_test_${PROJECT_NAME})
 
-add_executable(main)
-target_sources(main PUBLIC main.cpp)
-target_compile_options(main PUBLIC -Wall -pedantic -g)
-target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(main_${PROJECT_NAME})
+target_sources(main_${PROJECT_NAME} PUBLIC main.cpp)
+target_compile_options(main_${PROJECT_NAME} PUBLIC -Wall -pedantic -g)
+target_include_directories(main_${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
