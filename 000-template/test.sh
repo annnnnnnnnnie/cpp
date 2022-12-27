@@ -1,2 +1,2 @@
 cmake --build build
-cd build && ctest
+cd build && ctest || ctest --rerun-failed --output-on-failure
